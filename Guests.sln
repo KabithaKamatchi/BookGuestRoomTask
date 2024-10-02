@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestsRoom", "GuestsRoom\GuestsRoom.csproj", "{CF4FDE25-2C38-4C6E-80F7-BB2D0DBE22EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuestsRoom.Test", "GuestsRoom1\GuestsRoom.Test.csproj", "{F5872952-5242-4D4C-8720-26A6BB5706F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestsRoomLogic", "GuestsRoomLogic\GuestsRoomLogic.csproj", "{35630EDC-A262-4FB6-87EC-F07EA020FB17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF4FDE25-2C38-4C6E-80F7-BB2D0DBE22EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF4FDE25-2C38-4C6E-80F7-BB2D0DBE22EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF4FDE25-2C38-4C6E-80F7-BB2D0DBE22EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF4FDE25-2C38-4C6E-80F7-BB2D0DBE22EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5872952-5242-4D4C-8720-26A6BB5706F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5872952-5242-4D4C-8720-26A6BB5706F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5872952-5242-4D4C-8720-26A6BB5706F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5872952-5242-4D4C-8720-26A6BB5706F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35630EDC-A262-4FB6-87EC-F07EA020FB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35630EDC-A262-4FB6-87EC-F07EA020FB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35630EDC-A262-4FB6-87EC-F07EA020FB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35630EDC-A262-4FB6-87EC-F07EA020FB17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

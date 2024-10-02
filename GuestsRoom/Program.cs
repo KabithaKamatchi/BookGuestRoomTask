@@ -2,12 +2,12 @@
 
 namespace GuestsRoom
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
-        {
-            BookRoom.Solution();
-        }
+        //static void Main(string[] args)
+        //{
+        //    BookRoom.Solution();
+        //}
     }
 }
 
