@@ -5,7 +5,7 @@ namespace GuestsRoom.Test
     [TestClass]
     public class RoomSeperationTest
     {
-         #region Tests
+        #region Tests
         [TestMethod]
         public void TestBookRooms_3A_5C()
         {
@@ -23,21 +23,21 @@ namespace GuestsRoom.Test
         }
 
         [TestMethod]
-        public void TestBookRooms_5A_3C()
+        public void TestBookRooms_4A_5C()
         {
             //Arrange 
-            int nAdult = 5;
-            int nChildren = 3;
+            int nAdult = 4;
+            int nChildren = 5;
 
             //Act
             string strResult = BookRoom.RoomSeperation(nAdult, nChildren);
 
-            string expected = "Room 1: Adults 2 - Children 2\nRoom 2: Adults 1 - Children 3";
+            string expected = "Room 1: Adults 2 - Children 2\nRoom 2: Adults 2 - Children 2\nNo adults available. 1 children have no rooms.";
 
             //Assert
             Assert.AreEqual(expected, strResult);
 
-           
+
         }
 
         [TestMethod]
@@ -56,7 +56,6 @@ namespace GuestsRoom.Test
             Assert.AreEqual(expected, strResult);
         }
 
-       
         [TestMethod]
         public void TestBookRooms_1A_0C()
         {
@@ -72,7 +71,7 @@ namespace GuestsRoom.Test
             //Assert
             Assert.AreEqual(expected, strResult);
         }
-        
+
         [TestMethod]
         public void TestBookRooms_1A_1C()
         {
@@ -120,6 +119,38 @@ namespace GuestsRoom.Test
             //Assert
             Assert.AreEqual(expected, strResult);
         }
+
+        [TestMethod]
+        public void TestBookRooms_3A_8C()
+        {
+            //Arrange 
+            int nAdult = 3;
+            int nChildren = 8;
+
+            //Act
+            string strResult = BookRoom.RoomSeperation(nAdult, nChildren);
+
+            string expected = "Room 1: Adults 2 - Children 2\nRoom 2: Adults 1 - Children 3\nNo adults available. 3 children have no rooms.";
+
+            //Assert
+            Assert.AreEqual(expected, strResult);
+        }
+        [TestMethod]
+        public void TestBookRooms_2A_8C()
+        {
+            //Arrange 
+            int nAdult = 2;
+            int nChildren = 8;
+
+            //Act
+            string strResult = BookRoom.RoomSeperation(nAdult, nChildren);
+
+            string expected = "Room 1: Adults 2 - Children 2\nNo adults available. 6 children have no rooms.";
+
+            //Assert
+            Assert.AreEqual(expected, strResult);
+        }
+
         #endregion
     }
 }
